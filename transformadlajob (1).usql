@@ -1,0 +1,31 @@
+@extracted_data = 
+EXTRACT 
+[Campaign Name] string,
+[Country] string,
+[Geo_Targeting] string,
+[ID] int,
+[Budget] int,
+[Ad Group] string,
+[Max. CPC] int,
+[Keyword] string,
+[Language] string,
+[Keyword Type] string,
+[Average Position] int,
+[Average CPC] int,
+[Clicks] int,
+[CTR] string,
+[Cost] int,
+[Impressions] int,
+[_date] int,
+[_seconds] int
+FROM "/transformationv2/traffic_estimates_{_date}_{_seconds}.csv"
+USING Extractors.Text(skipFirstNRows:1, delimiter: '\t', encoding: Encoding.Unicode, silent: true);
+
+OUTPUT @extracted_data
+TO "/transformationv2_complete/adwords_data.tsv"
+USING Outputters.Tsv(outputHeader: true);
+
+
+
+
+
