@@ -19,3 +19,8 @@ The purpose of this mini project was to demonstrate data integration of multiple
 - Data is loosely structured in a lake, work can be very agile and changes can be made on the fly.
 - Integrating new data sources is very easy, data does not need to be transformed prior entering the lake.
 
+## First Steps
+- Created different dummy data sources with
+- AWS S3 - Simple Storage Service - Adwords Dummy Data
+- Local Python API - connects my Adwords account to Azure Data Lake
+
