@@ -1,4 +1,4 @@
-# Best Buy
+# Best Buy - For Jorge Vasquez
 
 ## Built With
 
@@ -10,7 +10,7 @@
 
 ## Getting Started
 
-The purpose of this mini project was to demonstrate data integration of multiple data sources into the Azure Data Lake pipeline. 
+The purpose of this mini project was to demonstrate data integration of multiple data sources into the Azure Data Lake pipeline, and visualize in PowerBI.
 
 ### Why I used a Data Lake over a Data Warehouse?
 
